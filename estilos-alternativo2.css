@@ -1,0 +1,47 @@
+body {
+        background-color: #C8C8C8;
+        background-image: linear-gradient(to left, #404040, #C8C8C8);
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    background-color: #151515;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bolder;
+}
+
+h2 {
+    text-align: left;
+    color: #404040;
+}
+
+p {
+    text-align: left;
+}
+
+.autor {
+    text-align: right;
+    background-color: #808080;
+}
+
+.separador {
+    text-align: center;
+    color: #404040;
+}
+
+button {
+    background-color: #151515;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+button:active {
+    background-color: #404040;
+    transform: scale(0.95);
+}
