@@ -169,6 +169,38 @@ menu > li > a:focus {
     transform: scale(0.95);
 }
 
+.autor > a {
+    text-decoration: none;
+    color: #025E73;
+    transition: color 0.4s, border 0.2s, transform 0.2s, font-weight 0.2s;
+}
+
+.autor > a:link {
+    color:#025E73;
+}
+
+.autor > a:visited {
+    color: #4b5563;
+}
+
+.autor > a:focus {
+    color: #011F26;
+    outline: 2px dashed #025E73;
+}
+
+.autor > a:hover {
+    color: #011F26;
+    transform: translateX(6px);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-left: 3px solid #374151;
+}
+
+.autor > a:active {
+    color: #BFB78F;
+    transform: scale(0.95);
+}
+
 button {
     background-color: #011F26;
     color: #FFFFFF;
@@ -190,7 +222,7 @@ button:active {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: 1.5px;
+    line-height: 1.5;
     text-align: justify;
     font-variation-settings:
       "XROT" 0,
@@ -224,7 +256,7 @@ button:active {
       "wdth" 100;
 }
 
-.pRE{
+.pES {
     font-family: "Encode Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -233,7 +265,7 @@ button:active {
       "wdth" 100;
 }
 
-.p3{
+.p3 {
     font-family: "Encode Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -242,7 +274,7 @@ button:active {
       "wdth" 100;
 }
 
-.p4{
+.p4 {
     font-family: "Encode Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -258,7 +290,8 @@ button:active {
 .autor {
     text-align: right;
     background-color: #BFB78F;
-    font-family:italic;
+    font-style: italic;
+    font-size: 0.8rem;
 }
 
 .separador {
