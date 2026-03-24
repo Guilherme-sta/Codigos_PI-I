@@ -1,8 +1,8 @@
 body {
-        background-color: #C8C8C8;
-        background-image: linear-gradient(to left, #404040, #C8C8C8);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1rem;
+    background-color: #C8C8C8;
+    background-image: linear-gradient(to left, #404040, #C8C8C8);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
 }
 
 h1 {
@@ -16,11 +16,11 @@ h1 {
 
 h2 {
     color: #404040;
-    font-size: 1.5rem
+    font-size: 1.5rem;
 }
 
 ol {
-    color: #e5e7eb;
+    color: #E5E7EB;
     list-style-position: inside;
     max-width: 400px;
     margin: auto;
@@ -44,7 +44,7 @@ li {
 
 li:hover {
     transform: translateX(6px);
-    background: #4b5563;
+    background: #4B5563;
 }
 
 li:first-child::before {
@@ -66,14 +66,15 @@ ol.aninhada > li {
     position: relative;
     margin-top: 1.5em;
     align-items: flex-start;
-    border-left: 4px solid #6B5B7E;
+    border-left: 4px solid #808080;
+    background: #333333;
 }
 
 ol.aninhada > li::before {
     content: counter(contador,decimal-leading-zero) ". ";
     position: absolute;
     left: -30px;
-    color: #151515;
+    color: #C8C8C8;
     font-weight: normal;
 }
 
@@ -83,7 +84,7 @@ ol.aninhada > li:first-child::before {
 
 ol.aninhada > li:hover {
     transform: translateX(6px);
-    background: #6B6BAA;
+    background: #444444;
 }
 
 ul {
@@ -98,6 +99,8 @@ ul {
 ul > li {
     margin: 2px 0;
     padding: 3px 10px;
+    background: #4A4A4A;
+    color: #C8C8C8;
 }
 
 ul > li:first-child::before {
@@ -105,16 +108,16 @@ ul > li:first-child::before {
 }
 
 ul > li:hover {
-    background: #5A5A8E;
+    background: #5A5A5A;
     transform: translateX(6px);
 }
 
 ul > li.riscada {
-    color: #555555;
+    color: #808080;
 }
 
 ul > li.riscada:hover {
-    background: #9090CC;
+    background: #555555;
 }
 
 .riscada {
@@ -140,16 +143,16 @@ ul.menu {
 
 .menu > li > a {
     text-decoration: none;
-    color: #025E73;
+    color: #151515;
     transition: color 0.4s, border 0.2s, transform 0.2s, font-weight 0.2s;
 }
 
 .menu > li > a:link {
-    color:#025E73;
+    color:#F0F0F0;
 }
 
 .menu > li > a:visited {
-    color: #4b5563;
+    color: #404040;
 }
 
 menu > li > a:focus {
@@ -158,15 +161,47 @@ menu > li > a:focus {
 }
 
 .menu > li > a:hover {
-    color: #011F26;
+    color: #FFFFFF;
     transform: translateX(6px);
     font-size: 1.1rem;
     font-weight: bold;
-    border-left: 3px solid #374151;
+    border-left: 3px solid #FFFFFF;
 }
 
 .menu > li > a:active {
-    color: #BFB78F;
+    color: #404040;
+    transform: scale(0.95);
+}
+
+.autor > a {
+    text-decoration: none;
+    color: #F5F5F5;
+    transition: color 0.4s, border 0.2s, transform 0.2s, font-weight 0.2s;
+}
+
+.autor > a:link {
+    color:#F5F5F5;
+}
+
+.autor > a:visited {
+    color: #DCDCDC;
+}
+
+.autor > a:focus {
+    color: #011F26;
+    outline: 2px dashed #025E73;
+}
+
+.autor > a:hover {
+    color: #111111;
+    transform: translateX(6px);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-left: 3px solid #F5F5F5;
+}
+
+.autor > a:active {
+    color: #222222;
     transform: scale(0.95);
 }
 
@@ -191,7 +226,7 @@ button:active {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: 1.5px;
+    line-height: 1.5;
     text-align: justify;
     font-variation-settings:
       "XROT" 0,
@@ -225,7 +260,7 @@ button:active {
       "wdth" 100;
 }
 
-.pRE{
+.pES{
     font-family: "Encode Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -253,13 +288,14 @@ button:active {
 }
 
 .img-teste {
-width: 300px;
+    width: 300px;
 }
 
 .autor {
     text-align: right;
     background-color: #808080;
-    font-family:italic;
+    font-style: italic;
+    font-size: 0.8rem;
 }
 
 .separador {
