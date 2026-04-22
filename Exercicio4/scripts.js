@@ -128,3 +128,24 @@ botao11.addEventListener('click', function() {
     }
     resultadoOperacao.innerText = "resultado: " + operacao;
 })
+
+let botao12 = getById("adicionarLista");
+
+botao12.addEventListener('click', function() {
+    let texto = getById("inputLista").value;
+    let lista = getById("Lista");
+    let novoItem = document.createElement("li");
+    novoItem.textContent = texto;
+    lista.appendChild(novoItem);
+})
+
+let botao13 = getById("adicionarSelect");
+
+botao13.addEventListener('click', function() {
+    let texto = getById("inputSelect").value;
+    let select = getById("Opcoes");
+    let novaOpcao = document.createElement("option");
+    novaOpcao.value = texto;
+    novaOpcao.textContent = texto;
+    select.appendChild(novaOpcao);
+})
