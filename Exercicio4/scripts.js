@@ -31,7 +31,7 @@ let resultadoContagem = getById('resultadoContagem');
 
 botao2.addEventListener('click', function() {
     let contador = getByTag("p",paragrafos_contagem).length;
-    resultadoContagem.innerText = contador;
+    resultadoContagem.innerText = "Paragráfos: " + contador;
 })
 
 var botao3 = getById("alterar");
@@ -48,9 +48,33 @@ botao4.addEventListener('click', function() {
     paragrafo.innerText = "";
 })
 
-let botao5 = getById("ocultar");
+let exemplo = getById("exemplo");
+exemplo.style.position = "absolute";
+exemplo.style.left = "-9999px";
+let botao5 = getById("exemplo1");
 
 botao5.addEventListener('click', function() {
+    let resultado = getById("resultadoExemplo1");
+    resultado.innerText = exemplo.textContent;
+})
+
+let botao6 = getById("exemplo2");
+
+botao6.addEventListener('click', function() {
+    let resultado = getById("resultadoExemplo2");
+    resultado.innerText = exemplo.innerText;
+})
+
+let botao7 = getById("exemplo3");
+
+botao7.addEventListener('click', function () {
+    let resultado = getById("resultadoExemplo3");
+    resultado.innerText = exemplo.innerHTML;
+})
+
+let botao8 = getById("ocultar");
+
+botao8.addEventListener('click', function() {
     getByTag("p").forEach(function(p) {
         if (p.style.visibility == "hidden"){
             p.style.visibility = "visible";
@@ -61,9 +85,9 @@ botao5.addEventListener('click', function() {
     })
 })
 
-let botao6 = getById("transferir");
+let botao9 = getById("transferir");
 
-botao6.addEventListener('click', function() {
+botao9.addEventListener('click', function() {
     let origem = getById("caixaOriginal").innerText;
     let destino = getById("caixaDestino");
     destino.innerText = origem.toUpperCase();
@@ -71,9 +95,9 @@ botao6.addEventListener('click', function() {
 
 let preto = "black";
 let branco = "white";
-let botao7 = getById("estiloBlack");
+let botao10 = getById("estiloBlack");
 
-botao7.addEventListener('click', function() {
+botao10.addEventListener('click', function() {
     getByTag("body").forEach(function(body) {
         body.style.color = branco;
         body.style.background = preto;
@@ -82,33 +106,33 @@ botao7.addEventListener('click', function() {
 
 let corTextoOriginal = document.body.style.color;
 let corFundoOriginal = document.body.style.background;
-let botao8 = getById("estiloPadrao");
+let botao11 = getById("estiloPadrao");
 
-botao8.addEventListener('click', function() {
+botao11.addEventListener('click', function() {
     getByTag("body").forEach(function(body) {
         body.style.color = corTextoOriginal;
         body.style.background = corFundoOriginal;
     })
 })
 
-let botao9 = getById("aumentarTexto");
+let botao12 = getById("aumentarTexto");
 
-botao9.addEventListener('click',function() {
+botao12.addEventListener('click',function() {
     let tamanhoFonteAtual = parseFloat(getComputedStyle(document.body).fontSize);
     document.body.style.fontSize = (tamanhoFonteAtual + 1) + "px";
 })
 
-let botao10 = getById("diminuirTexto");
+let botao13 = getById("diminuirTexto");
 
-botao10.addEventListener('click',function() {
+botao13.addEventListener('click',function() {
     let tamanhoFonteAtual = parseFloat(getComputedStyle(document.body).fontSize);
     document.body.style.fontSize = (tamanhoFonteAtual - 1) + "px";
 })
 
-let botao11 = getById("calcular");
+let botao14 = getById("calcular");
 let resultadoOperacao = getById("resultadoOperacao")
 
-botao11.addEventListener('click', function() {
+botao14.addEventListener('click', function() {
     let n3 = getById("n3").value;
     let n4 = getById("n4").value;
     if ((getById("soma").checked) == true) {
@@ -129,9 +153,9 @@ botao11.addEventListener('click', function() {
     resultadoOperacao.innerText = "resultado: " + operacao;
 })
 
-let botao12 = getById("adicionarLista");
+let botao15 = getById("adicionarLista");
 
-botao12.addEventListener('click', function() {
+botao15.addEventListener('click', function() {
     let texto = getById("inputLista").value;
     let lista = getById("Lista");
     let novoItem = document.createElement("li");
@@ -139,9 +163,9 @@ botao12.addEventListener('click', function() {
     lista.appendChild(novoItem);
 })
 
-let botao13 = getById("adicionarSelect");
+let botao16 = getById("adicionarSelect");
 
-botao13.addEventListener('click', function() {
+botao16.addEventListener('click', function() {
     let texto = getById("inputSelect").value;
     let select = getById("Opcoes");
     let novaOpcao = document.createElement("option");
