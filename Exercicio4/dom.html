@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de uso do DOM</title>
+    <script src = "script.js" defer></script>
+</head>
+<body>
+    <h1>Exemplos de uso do DOM</h1>
+    <h2>Multiplicação de dois números através do Id</h2>
+    <input id = "n1"><br><br>
+    <input id = "n2"><br><br>
+    <button id = "multiplicar">Multiplicar</button><br>
+    <div id = "resultadoMultiplicacao"></div>
+
+    <h2>Mudar a cor dos textos dos paragráfos através da Tag</h2>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam pariatur eveniet voluptatibus doloremque est reprehenderit et temporibus? Quod, optio a. Laboriosam doloribus repudiandae ducimus nam nisi alias tenetur sint dolorem?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex debitis, earum harum consequuntur accusamus ducimus nisi perferendis totam at, dolores ipsum. Veritatis architecto laborum omnis necessitatibus similique. Voluptates, iure.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi laudantium, facere optio ab aliquam vero perspiciatis adipisci, labore quidem et molestias accusantium corporis, ad officiis repellendus aperiam in dolore dicta?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, beatae maiores reiciendis quaerat laudantium odit dolore sit unde veritatis iusto omnis nisi quam. Soluta accusantium vero modi laudantium consequuntur unde?</p>
+    <button id = "mudarCor">Mudar cor</button>
+
+    <div id = "paragrafosDeContagem">
+        <h2>Contagem de paragráfos de uma div</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quidem amet temporibus dolores voluptatem nemo deserunt. Esse officiis, voluptatibus quo repudiandae quod dolorum suscipit, sunt, quia est beatae repellat et?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate reiciendis quas, eaque nisi non debitis vitae veniam fuga tempore exercitationem aspernatur consequatur voluptas, optio distinctio, est eum corporis inventore hic!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate fugit eos est sequi repudiandae esse, cumque sint odit cum rem explicabo, atque labore tempore nam quae, illo minus. Dolore, accusantium!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque autem in quia cum consequatur earum, perferendis molestias placeat vitae? Aspernatur provident aperiam veniam minus. Possimus molestiae recusandae ipsam ducimus dolorum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio modi dicta illo ipsum aperiam ex fugit mollitia ratione rerum quaerat? Illum quos nulla veniam velit reiciendis sint quasi modi fugit?</p>
+    </div>
+
+    <button id = "contagemParagrafos">Contar paragráfos</button>
+    <br>
+    <div id = "resultadoContagem"></div>
+
+    <h2>Substituição e limpeza do texto de um paragráfo</h2>
+    <p id = "paragrafo">Clique no botão a esquerda para alterar o texto deste
+        parágrafo e no botão a direita para limpar o contéudo do texto do 
+        parágrafo:</p>
+    <button id = "alterar">Clique aqui</button>
+    <button id = "limpar">Limpar texto</button>
+
+    <h2>Diferença entre as propriedades textContent, innerText e innerHTML</h2>
+    <h3>Essas três propriedades servem para ler ou alterar conteúdo de elementos HTML,
+        mas cada uma se comporta de forma diferente:</h3>
+    <h4>Exemplo para comparação: &lt;div id="exemplo"&gt;Olá &lt;b&gt;mundo&lt;/b&gt;&lt;/div&gt;</h4>
+    <div id="exemplo"> 
+        Olá <b>mundo</b><span style="display: none;">(texto oculto)</span></div>
+    <fieldset>
+        <legend><strong>TextContent</strong></legend>
+        <p>Diferenças:</p>
+        <ul>
+            <li>Retorna todo o texto do elemento</li>
+            <li>Não interpeta tags HTML</li>
+            <li>Inclui textos que estão ocultos</li>
+        </ul>
+        <button id = "exemplo1">Exemplo</button>
+        <div id = "resultadoExemplo1"></div>
+    </fieldset>
+    <fieldset>
+        <legend><strong>InnerText</strong></legend>
+        <p>Diferenças:</p>
+        <ul>
+            <li>Retorna apenas o texto visível na tela</li>
+            <li>Considera quebras de linha e layout</li>
+            <li>Não inclui textos que estão ocultos</li>
+        </ul>
+        <button id = "exemplo2">Exemplo</button>
+        <div id = "resultadoExemplo2"></div>
+    </fieldset>
+    <fieldset>
+        <legend><strong>InnerHTML</strong></legend>
+        <p>Diferenças:</p>
+        <ul>
+            <li>Retorna o conteúdo HTML completo</li>
+            <li>Interpeta tags</li>
+        </ul>
+        <button id = "exemplo3">Exemplo</button>
+        <div id = "resultadoExemplo3"></div>
+    </fieldset>
+
+    <h2>Ocultar/Revelar paragráfos da página</h2>
+    <button id = "ocultar">Ocultar/Revelar texto</button>
+
+    <h2>Transferir texto de uma caixa a outra com caixa alta</h2>
+    <h3>Caixa Original</h3>
+    <div id = "caixaOriginal">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Cum ipsam et, reprehenderit consequatur vitae mollitia repudiandae 
+            molestias aut ipsa tempora accusamus voluptatem non sapiente animi 
+            a laudantium ex saepe dicta.</p>
+    </div>
+    <h3>Caixa de Destino</h3>
+    <div id = "caixaDestino">
+    </div><br>
+
+    <button id = "transferir">Transferir texto</button><br>
+
+    <h2>Mudar cores da página</h2>
+    <button id = "estiloBlack">Modo escuro</button>
+    <button id = "estiloPadrao">Modo padrão</button>
+
+    <h2>Mudar o tamanho do texto da página</h2>
+    <button id = "aumentarTexto">Aumentar texto</button>
+    <button id = "diminuirTexto">Diminuir texto</button>    
+
+    <h2>Calculadora das 4 operações básicas</h2>
+    <input id = "n3"><br><br>
+    <input id = "n4"><br><br>
+    <input type = "radio" id = "soma" name = "operacoes" value = "soma">
+    <label for = "soma">Soma</label><br>
+    <input type = "radio" id = "subtracao" name = "operacoes" value = "subtracao">
+    <label for = "subtracao">Subtração</label><br>
+    <input type = "radio" id = "multiplicacao" name = "operacoes" value = "multiplicacao">
+    <label for = "multiplicacao">Multiplicação</label><br>
+    <input type = "radio" id = "divisao" name = "operacoes" value = "divisao">
+    <label for = "divisao">Divisão</label><br><br>
+    <button id = "calcular">Calcular</button><br>
+    <div id = "resultadoOperacao"></div>
+
+    <h2>Criação de elementos</h2>
+    <h3>Transferência de caixa de texto para uma lista</h3>
+    <input type = "text" id = "inputLista" placeholder = "Digite um item">
+    <button id = "adicionarLista">Adicionar</button>
+    <p><strong>Minha lista</strong></p>
+    <ul id = "Lista"></ul>
+
+    <h3>Transferência de caixa de texto para um select</h3>
+    <input type = "text" id = "inputSelect" placeholder = "Digite uma opção">
+    <button id = "adicionarSelect">Adicionar</button>
+    <p><strong>Select com as opções atuais</strong></p>
+    <select id = "Opcoes" name = "Opcoes"></select>
+
+</body>
+</html>
