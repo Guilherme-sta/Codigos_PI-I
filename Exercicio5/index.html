@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "scripts.js" defer></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h2>Botão de erro</h2>
+    <button id="botaoErro">Mostrar Erro</button>
+    <div id="mensagemErro1" class="oculto"></div>
+
+    <h2>Exibir imput de texto</h2>
+    <label for="caixadeTexto">Digite o texto:</label>
+    <input type="text" id="caixaDeTexto"><br>
+    <button id="botaoExibir">Exibir</button>
+    <div id="conteudo"></div>
+
+    <h2>Cálculo de taxa de engajamento de postagem</h2>
+    <label for="caixadeInteracoes">Número de interações:</label>
+    <input type="text" id="caixadeInteracoes"><br>
+    <label for="caixadeVisualizacoes">Número de visualizações:</label>
+    <input type="text" id="caixadeVisualizacoes"><br>
+    <button id="calcularTaxa">Cálculo de taxa</button>
+    <div id="exibicaoErro"></div>
+    <div id="taxaResultante"></div>
+    
+    <h2>Upload</h2>
+    <input type="file" id="uploadImagem" accept="image/*"><br>
+    <button id="botaoUpload">Upload</button>
+    <div id="resultadoUpload"></div>
+
+    <h2>Upload com select</h2>
+    <label>
+        Selecione uma imagem:
+        <select class="galeria" name="galeria">
+            <option value="" selected disabled hidden>Selecione uma opção</option>
+            <option value="Aria">Aria of Sorrow</option>
+            <option value="Lament">Lament of Innocence</option>
+            <option value="Symphony">Symphony of the Night</option>
+        </select>
+    </label>
+
+    <div id="resultadoSelect"></div>
+
+    <h2>Redes sociais favoritas</h2>
+
+    <div id="redesSociais">
+    <div>
+        <input type="checkbox" id="facebook" name="redesSociais" value="Facebook">
+        <label for="facebook">Facebook</label>
+    </div>
+    <div>
+        <input type="checkbox" id="twitter" name="redesSociais" value="Twitter">
+        <label for="twitter">Twitter</label>
+    </div>
+    <div>
+        <input type="checkbox" id="instagram" name="redesSociais" value="Instagram">
+        <label for="instagram">Instagram</label>
+    </div>
+    <div>
+        <input type="checkbox" id="linkedin" name="redesSociais" value="LinkedIn">
+        <label for="linkedin">LinkedIn</label>
+    </div>
+    <div>
+        <input type="checkbox" id="tiktok" name="redesSociais" value="TikTok">
+        <label for="tiktok">TikTok</label>
+    </div>
+    <div class="oculto" id="mensagemErro2"></div>
+    <div id="redesSelecionadas"></div>
+    <button type="button" id="enviarBtn">Enviar Seleção</button>
+    </div>
+
+    <h2>Hashtags em alta</h2>
+    <div id="threading">
+    <input type="text" id="inputHashtag" placeholder="Digite uma hashtag"><br>
+    <button id="adicionarHashtag">Adicionar</button><br>
+    <button id="removerHashtag">Remover</button>
+    <div id="mensagemErro3"></div>
+    <p><strong>Assuntos que estão em alta</strong></p>
+    <select id ="Hashtags" name="Hashtags" size="5"></select>
+    </div>
+  
+</body>
+</html>
