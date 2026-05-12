@@ -2,7 +2,26 @@
     display: none;
 }
 
-#mensagemErro {
+#mensagemErro1,#mensagemErro2,#mensagemErro3,#mensagemErro4,
+#mensagemErro5,#mensagemErro6,#mensagemErro7,#mensagemErro8 {
     color: red;
     margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#ativosDisponiveis,#carteiraInvestimentos {
+    width: 200px;
+    height: 250px;
 }
